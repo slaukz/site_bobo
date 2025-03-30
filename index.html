@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Especial</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #94c3e9;
+            margin: 0;
+            flex-direction: column;
+        }
+        .gift {
+            width: 150px;
+            height: 150px;
+            background: url('presente.webp') no-repeat center/cover;
+            cursor: pointer;
+        }
+        .letter {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 300px;
+        }
+        .letter img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .spotify-icon {
+            position: fixed;
+            bottom: 15px;
+            right: 825px;
+            width: 40px;}
+
+    </style>
+    <script>
+        function openLetter() {
+            document.querySelector('.gift').style.display = 'none';
+            document.querySelector('.letter').style.display = 'block';
+            document.querySelector('h1').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Clique no presente para abrí-lo</h1>
+    <div class="gift" onclick="openLetter()"></div>
+    <div class="letter">
+        <h2>Bobona Santana ❤️</h2>
+        <p>Não sou bom com palavras, mas saiba que o que sinto é muito mais do que demonstro, mesmo eu sendo todo inexplicável, acho que a gente se dá muito bem. Estamos cientes dos riscos e de que ambos não foram amados românticamente de forma correta, talvez isso cause um certo estranhamento, mas tudo que fizemos em tão pouco tempo nos deixa em posição de sintonia. Toda vez que você manda mensagem meu coração bate diferente, tlgd? Não sei explicar, mas é totalmente diferente de tudo que já tive, e eu quero muito que seja você, e vou fazer o possível pra isso.</p>
+        <p> 사랑해요 💖</p>
+        <img src="cha.jpg" alt="Foto nossa">
+    </div>
+    <footer>
+        <div class="spotify">
+
+            <a href="https://open.spotify.com/playlist/2K7k1ezkXDsnSrr7eVk8jr?si=5ff72a56f5bb464c" target="_blank">
+            <img src="spotify.png" alt="" class="spotify-icon"> </a>
+    </div>
+        <p>Made by Loirinho</p>
+    </footer>
+</body>
+</html>
